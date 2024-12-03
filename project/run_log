@@ -1,0 +1,118 @@
+nohup: ignoring input
+/home/insik_hwang/project/project_app.py:75: LangChainDeprecationWarning: The class `BedrockEmbeddings` was deprecated in LangChain 0.2.11 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-aws package and should be used instead. To use it run `pip install -U :class:`~langchain-aws` and import as `from :class:`~langchain_aws import BedrockEmbeddings``.
+  bedrock_model = BedrockEmbeddings(credentials_profile_name="default",
+Index loaded from image_vector.index
+Metadata loaded from image_vector.index.paths
+Metas loaded from image_vector_index_metas.json
+* Running on local URL:  http://127.0.0.1:7860
+* Running on public URL: https://40e4354aa9d1685be6.gradio.live
+
+This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)
+<class 'numpy.ndarray'>
+Traceback (most recent call last):
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/queueing.py", line 624, in process_events
+    response = await route_utils.call_process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/route_utils.py", line 323, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 2015, in process_api
+    result = await self.call_function(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 1562, in call_function
+    prediction = await anyio.to_thread.run_sync(  # type: ignore
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+    return await future
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+    result = context.run(func, *args)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/utils.py", line 865, in wrapper
+    response = f(*args, **kwargs)
+  File "/home/insik_hwang/project/project_app.py", line 379, in gradio_tab1_function
+    query_features = image_embedding_from_array(nd_image)
+  File "/home/insik_hwang/project/project_app.py", line 348, in image_embedding_from_array
+    response = bedrock_runtime.invoke_model(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
+<class 'numpy.ndarray'>
+Traceback (most recent call last):
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/queueing.py", line 624, in process_events
+    response = await route_utils.call_process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/route_utils.py", line 323, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 2015, in process_api
+    result = await self.call_function(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 1562, in call_function
+    prediction = await anyio.to_thread.run_sync(  # type: ignore
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+    return await future
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+    result = context.run(func, *args)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/utils.py", line 865, in wrapper
+    response = f(*args, **kwargs)
+  File "/home/insik_hwang/project/project_app.py", line 379, in gradio_tab1_function
+    query_features = image_embedding_from_array(nd_image)
+  File "/home/insik_hwang/project/project_app.py", line 348, in image_embedding_from_array
+    response = bedrock_runtime.invoke_model(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
+<class 'numpy.ndarray'>
+Traceback (most recent call last):
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/queueing.py", line 624, in process_events
+    response = await route_utils.call_process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/route_utils.py", line 323, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 2015, in process_api
+    result = await self.call_function(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 1562, in call_function
+    prediction = await anyio.to_thread.run_sync(  # type: ignore
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+    return await future
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+    result = context.run(func, *args)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/utils.py", line 865, in wrapper
+    response = f(*args, **kwargs)
+  File "/home/insik_hwang/project/project_app.py", line 379, in gradio_tab1_function
+    query_features = image_embedding_from_array(nd_image)
+  File "/home/insik_hwang/project/project_app.py", line 348, in image_embedding_from_array
+    response = bedrock_runtime.invoke_model(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
+<class 'numpy.ndarray'>
+Traceback (most recent call last):
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/queueing.py", line 624, in process_events
+    response = await route_utils.call_process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/route_utils.py", line 323, in call_process_api
+    output = await app.get_blocks().process_api(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 2015, in process_api
+    result = await self.call_function(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/blocks.py", line 1562, in call_function
+    prediction = await anyio.to_thread.run_sync(  # type: ignore
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+    return await future
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+    result = context.run(func, *args)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/gradio/utils.py", line 865, in wrapper
+    response = f(*args, **kwargs)
+  File "/home/insik_hwang/project/project_app.py", line 379, in gradio_tab1_function
+    query_features = image_embedding_from_array(nd_image)
+  File "/home/insik_hwang/project/project_app.py", line 348, in image_embedding_from_array
+    response = bedrock_runtime.invoke_model(
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 569, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/insik_hwang/project/.conda/lib/python3.10/site-packages/botocore/client.py", line 1023, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (UnrecognizedClientException) when calling the InvokeModel operation: The security token included in the request is invalid.
